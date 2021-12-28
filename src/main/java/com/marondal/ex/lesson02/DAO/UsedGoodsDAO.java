@@ -1,4 +1,4 @@
-package com.marondal.ex.lesson02.DAO;
+package com.marondal.ex.lesson02.Dao;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import com.marondal.ex.lesson02.model.UsedGoods;
 @Repository
 public interface UsedGoodsDAO {
 	
-	public List<UsedGoods> selectUsedGoodsList();
-	
+	public List<UsedGoods> selectUsedGoods();
+		
 	
 
 }

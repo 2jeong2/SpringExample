@@ -3,6 +3,7 @@ package com.marondal.ex.lesson02.model;
 import java.util.Date;
 
 public class UsedGoods {
+	
 	private int id;
 	private int sellerId;
 	private String title;
