@@ -16,4 +16,8 @@ public class ReviewBO {
 		return ReviewDAO.selectReview(id);
 		
 	}
+	
+	public int addReview(int storeName,String menu,String userName, double point, String review) {
+		return ReviewDAO.insertReviewAsObject();
+	}
 }

@@ -5,9 +5,9 @@ import java.util.Date;
 public class Review {
 
 	private int id;
-	private int StoreId;
+	private int StoreName;
 	private String menu;
-	private String userNAme;
+	private String userName;
 	private double point;
 	private String review;
 	private Date createdAt;
@@ -19,11 +19,12 @@ public class Review {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getStoreId() {
-		return StoreId;
+
+	public int getStoreName() {
+		return StoreName;
 	}
-	public void setStoreId(int storeId) {
-		StoreId = storeId;
+	public void setStoreName(int storeName) {
+		StoreName = storeName;
 	}
 	public String getMenu() {
 		return menu;
@@ -31,11 +32,12 @@ public class Review {
 	public void setMenu(String menu) {
 		this.menu = menu;
 	}
-	public String getUserNAme() {
-		return userNAme;
+	
+	public String getUserName() {
+		return userName;
 	}
-	public void setUserNAme(String userNAme) {
-		this.userNAme = userNAme;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public double getPoint() {
 		return point;

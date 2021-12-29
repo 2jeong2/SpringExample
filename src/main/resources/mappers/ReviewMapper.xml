@@ -9,7 +9,7 @@
  
  	SELECT 
  		`id`
- 		,`storeId`
+ 		,`storeName`
  		,`menu`
  		,`userName`
  		,`point`
@@ -23,5 +23,52 @@
  
  </select>
  
+ <insert id="insertReview" parameterType="map">
+ 	INSERT INTO `review`
+ 	(`storeName`
+ 	,`menu`
+ 	,`userName`
+ 	,`point`
+ 	,`review`
+ 	,`createdAt`
+ 	,`updatedAt`
+ )
+	 VALUES
+	 (
+	#{storeId}
+	,#{menu}
+	,#{userName}
+	,#{point}
+	,#{review}
+	,#{createdAt}
+	,#{updatedAt}
  
+ )
+ 
+ </insert>
+ <insert id="insertReviewAsObject" parameterType="com.marondal.ex.lesson02.model.Review" >
+ 
+ INSERT INTO `review`
+ 	(`storeName`
+ 	,`menu`
+ 	,`userName`
+ 	,`point`
+ 	,`review`
+ 	,`createdAt`
+ 	,`updatedAt`
+ )
+	 VALUES
+	 (
+	#{storeId}
+	,#{menu}
+	,#{userName}
+	,#{point}
+	,#{review}
+	,now()
+	,now()
+ 
+ )
+ 
+ 
+ </insert>
  </mapper>

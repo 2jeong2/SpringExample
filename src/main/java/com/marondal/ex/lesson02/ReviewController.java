@@ -26,5 +26,15 @@ public class ReviewController {
 			) {
 		return ReviewBO.getReview(id);
 	}
+	
+	@RequestMapping("/lesson03/ex02")
+	public String ex02() {
+		
+		Review review = new Review();
+		review.setStoreName(4);
+		review.setMenu("콤비네이션");
+		review.setUserName("김바다");
+		//4,"콤비네이션피자,김바다,4.5,
+	}
 
 }
