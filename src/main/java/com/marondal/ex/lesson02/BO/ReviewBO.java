@@ -18,6 +18,10 @@ public class ReviewBO {
 	}
 	
 	public int addReview(int storeName,String menu,String userName, double point, String review) {
-		return ReviewDAO.insertReviewAsObject();
+		return ReviewDAO.insertReview(storeName, menu, userName, point, review);
+	}
+	
+	public int addReview_2(Review Review) {
+		return ReviewDAO.insertReviewAsObject(Review);
 	}
 }

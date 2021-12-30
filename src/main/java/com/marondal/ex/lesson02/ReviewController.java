@@ -35,6 +35,10 @@ public class ReviewController {
 		review.setMenu("콤비네이션");
 		review.setUserName("김바다");
 		//4,"콤비네이션피자,김바다,4.5,
+		
+		int count = ReviewBO.addReview_2(review);
+		return "입력 결과 : " + count;
+
 	}
 
 }
