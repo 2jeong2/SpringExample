@@ -35,7 +35,7 @@
  )
 	 VALUES
 	 (
-	#{storeId}
+	#{storeName}
 	,#{menu}
 	,#{userName}
 	,#{point}
@@ -59,7 +59,7 @@
  )
 	 VALUES
 	 (
-	#{storeId}
+	#{storeName}
 	,#{menu}
 	,#{userName}
 	,#{point}

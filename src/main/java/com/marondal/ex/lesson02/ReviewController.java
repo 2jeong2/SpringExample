@@ -32,8 +32,10 @@ public class ReviewController {
 		
 		Review review = new Review();
 		review.setStoreName(4);
-		review.setMenu("콤비네이션");
+		review.setMenu("뿌링클");
 		review.setUserName("김바다");
+		review.setPoint(4.0);
+		review.setReview("역시 뿌링클은 진리 입니다!!");
 		//4,"콤비네이션피자,김바다,4.5,
 		
 		int count = ReviewBO.addReview_2(review);

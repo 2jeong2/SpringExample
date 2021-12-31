@@ -3,7 +3,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="com.marondal.ex.lesson02.dao.UsedGoodsDAO">
+ <mapper namespace="com.marondal.ex.lesson02.Dao.UsedGoodsDAO">
  
  	<select id="selectUsedGoodsList" resultType="com.marondal.ex.lesson02.model.UsedGoods">
  		SELECT

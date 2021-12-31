@@ -10,23 +10,32 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<title>회원정보 추가</title>
+<title>사용자 정보</title>
 </head>
 <body>
 
-<div class="container">
+<div class="contaniner">
+<form method="get" action=""></form>
+	<h1>${subject}</h1>
 
-	<h1 class="mt-3">회원정보 추가</h1>
-	<form method="post" action="/lesson04/ex01/add_user">
-	
-		<label>이름 : </label><input type="text" class="form-control" name="name">
-		<label>생년월일 : </label><input type="text" class="form-control" name="yyyymmdd">
-		<label>자기소개 : </label>
-		<textarea rows="10" cols="5" class="form-control" name ="introduce"></textarea>
-		<label>이메일 : </label><input type="text" class="form-control" name="email">
+	<table class="table table-striped">
+		<tr>
+			<th>이름</th>
+			<td>${result.name}</td>
 		
-		<input type="submit" value="추가 " class="btn btn-success"></input>
-	</form>
+		</tr>
+		<tr>
+			<th>생년월일</th>
+			<td>${result.yyyymmdd}</td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td>${result.email}</td>
+		</tr>
+	
+	
+	</table>
+
 
 </div>
 

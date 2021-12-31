@@ -5,7 +5,7 @@ import java.util.Date;
 public class Review {
 
 	private int id;
-	private int StoreName;
+	private int storeName;
 	private String menu;
 	private String userName;
 	private double point;
@@ -21,10 +21,10 @@ public class Review {
 	}
 
 	public int getStoreName() {
-		return StoreName;
+		return storeName;
 	}
 	public void setStoreName(int storeName) {
-		StoreName = storeName;
+		this.storeName = storeName;
 	}
 	public String getMenu() {
 		return menu;
