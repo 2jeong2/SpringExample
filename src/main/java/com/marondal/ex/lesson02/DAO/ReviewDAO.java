@@ -1,4 +1,4 @@
-package com.marondal.ex.lesson02.Dao;
+package com.marondal.ex.lesson02.DAO;
 
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
