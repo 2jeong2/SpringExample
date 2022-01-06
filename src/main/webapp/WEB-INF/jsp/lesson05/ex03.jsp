@@ -19,6 +19,55 @@
 	<c:set var="number" value="12345678"/>
 	<h2>출력</h2>
 	<fmt:formatNumber value="${number }"/>
-
+	<br>
+	<fmt:formatNumber value="${number }" type="number"/>
+	<br>
+	<fmt:formatNumber value="${number }" type="number" groupingUsed="false"/>
+	<br>
+	
+	<%--percent --%>
+	<fmt:formatNumber value="1" type="percent" />
+	<br>
+	<%--40% --%>
+	<fmt:formatNumber value="0.4" type="percent"/>
+	<br>
+	<%--통화 --%>
+	통화(원):<fmt:formatNumber value="${number }" type="currency"/><br>
+	통화(달러):<fmt:formatNumber value="${number }" type="currency" currencySymbol="$"/>
+	
+	
+	<fmt:formatNumber value="${number }" type="currency" currencySymbol="$" var="dollar"/>
+	<br>
+	통화변수 출력 : ${dollar }
+	<br>
+	<h2>패턴</h2>
+	<%--3.14 --%>
+	<fmt:formatNumber value="3.14" pattern="0.0000"/>
+	<br>
+	<fmt:formatNumber value="3.14" pattern="#.####"/>
+	<br>
+	<fmt:formatNumber value="3.141592" pattern="#.####"/>
+	<br>
+	
+	<h2>날짜</h2>
+	<fmt:formatDate value="${today }" pattern="yyyy년 MM월 dd일 HH시 mm분 ss초"/>
+	<fmt:formatDate value="${today }" pattern="yyyy/MM/dd hh:mm:ss초" var="dateString"/>
+	<br>
+	데이트 문자열 변수 : ${dateString }<br>
+	
+	<h2>문자열 Date 객체로 변환</h2>
+	<fmt:parseDate value="${dateString }" pattern="yyyy/MM/dd hh:mm:ss" var="date"/>
+	
+	
+	<fmt:formatDate value="${date }" pattern="yyyy년 MM월 dd일"/>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </body>
 </html>

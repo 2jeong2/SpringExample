@@ -1,11 +1,9 @@
 package com.marondal.ex.lesson05;
 
-<<<<<<< HEAD
-public class lesson05Controller {
-	
-	@Controller
-=======
+
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,9 +55,19 @@ public class lesson05Controller {
 	}
 	
 	@GetMapping("/lesson05/ex03")
-	public String ex03() {
+	public String ex03(Model model) {
+		
+		Date today = new Date();
+		
+		model.addAttribute("today",today);
+		
 		return "lesson05/ex03";
 	}
->>>>>>> d317f6f8752028ddde0555abeee1b889f10d4198
+	@GetMapping("/lesson05/ex04")
+	public String ex04(Model model) {
+	
+		
+		return "lesson05/ex04";
+	}
 
 }
