@@ -1,4 +1,4 @@
-package com.marondal.ex.lesson02.DAO;
+package com.marondal.ex.lesson02.Dao;
 
 import java.util.List;
 
